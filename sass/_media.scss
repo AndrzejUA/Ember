@@ -1,0 +1,29 @@
+@media screen and (max-width: 992px) {
+    #feedback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin: 0px;
+        }
+    }
+    form {
+        flex-direction: column;
+        background-color: rgba(#000, 0.5)
+    }
+    input {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin: 0px;
+        }
+    }
+}
