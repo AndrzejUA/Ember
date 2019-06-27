@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     #feedback {
         display: flex;
         flex-direction: column;
@@ -25,5 +25,8 @@
         h2 {
             margin: 0px;
         }
+    }
+    .shoping {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
