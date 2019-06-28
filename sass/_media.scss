@@ -26,4 +26,18 @@
             margin: 0px;
         }
     }
+    #contacts {
+        h2 {
+            grid-row: 1;
+            grid-column: 1 / -1;
+        }
+        .contact-inf {
+            grid-row: 2;
+            grid-column: 1 / -1;
+        }
+        iframe {
+            grid-row: 3;
+            grid-column: 1 / -1;
+        }
+    }
 }
