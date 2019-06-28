@@ -45,10 +45,6 @@
   #feedback h2 {
     margin: 0px;
   }
-  .shoping {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 #information h2 {
@@ -238,16 +234,17 @@ header {
 }
 
 #information {
-  max-width: 900px;
+  max-width: 865px;
   margin: auto;
   padding: 35px;
 }
 
 #information .shoping {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(180px, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(180px, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -262,7 +259,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-bottom: 15px;
+  margin: 15px;
   vertical-align: top;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -270,5 +267,9 @@ header {
 #information .shoping__blog img {
   margin-left: auto;
   margin-right: auto;
+}
+
+#information .shoping__blog span {
+  width: 180px;
 }
 /*# sourceMappingURL=style.css.map */
