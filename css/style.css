@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
-@media screen and (max-width: 992px) {
-  #feedback {
+@media screen and (max-width: 900px) {
+  section .offer .content-block {
+    width: 100%;
+  }
+  .feedback {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11,7 +14,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  #feedback h2 {
+  .feedback h2 {
     margin: 0px;
   }
   form {
@@ -27,7 +30,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  #feedback {
+  .feedback {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,27 +45,27 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  #feedback h2 {
+  .feedback h2 {
     margin: 0px;
   }
-  #contacts h2 {
+  .contacts h2 {
     -ms-grid-row: 1;
     grid-row: 1;
     grid-column: 1 / -1;
   }
-  #contacts .contact-inf {
+  .contacts .contact-inf {
     -ms-grid-row: 2;
     grid-row: 2;
     grid-column: 1 / -1;
   }
-  #contacts iframe {
+  .contacts iframe {
     -ms-grid-row: 3;
     grid-row: 3;
     grid-column: 1 / -1;
   }
 }
 
-#information h2, #section-text h2, #contacts h2 {
+.information h2, .contacts h2 {
   text-align: center;
   font-family: Roboto, sans-serif;
   color: #00173d;
@@ -127,16 +130,16 @@ header {
   cursor: pointer;
 }
 
-#section1 {
+.section1 {
   background-color: Gainsboro;
-  text-align: center;
   padding: 35px 0 35px 0;
+  text-align: center;
 }
 
-#section1 h2 {
+.section1 h2 {
   margin: 0 0 10px 0;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #00173d;
 }
 
@@ -149,13 +152,14 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: auto;
 }
 
-.content-block {
+.offer .content-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -168,22 +172,21 @@ header {
   margin: 20px;
   -webkit-box-shadow: gray 2px 3px 5px;
           box-shadow: gray 2px 3px 5px;
-  width: auto;
+  width: 25%;
 }
 
-.dver {
-  width: 250px;
+.offer .content-block .dver {
+  width: 100%;
   text-align: center;
   padding-bottom: 10px;
 }
 
-.content-text {
+.offer .content-block .content-text {
   text-align: center;
-  max-width: 250px;
   padding-bottom: 10px;
 }
 
-.content-btn {
+.offer .content-block .content-btn {
   cursor: pointer;
   width: 80%;
   height: 40px;
@@ -195,18 +198,18 @@ header {
   border-radius: 10px;
 }
 
-.content-btn:hover {
+.offer .content-block .content-btn:hover {
   background-color: rgba(21, 114, 183, 0.8);
 }
 
-#feedback {
+.feedback {
   background: url(/img/modern-city.jpg) no-repeat center 30%;
   background-size: cover;
   padding: 35px;
   text-align: center;
 }
 
-#feedback h2 {
+.feedback h2 {
   display: inline-block;
   margin-top: 0;
   color: #00173d;
@@ -217,7 +220,7 @@ header {
   background-color: rgba(218, 218, 218, 0.5);
 }
 
-#feedback form {
+.feedback form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,14 +228,14 @@ header {
       justify-content: space-around;
 }
 
-#feedback form input {
+.feedback form input {
   width: 250px;
   height: 40px;
   padding-left: 10px;
   border: none;
 }
 
-#feedback form .feedback-btn {
+.feedback-btn {
   cursor: pointer;
   width: 250px;
   height: 40px;
@@ -244,17 +247,17 @@ header {
   border-radius: 10px;
 }
 
-#feedback form .feedback-btn:hover {
+.feedback-btn:hover {
   background-color: rgba(21, 114, 170, 0.8);
 }
 
-#information {
+.information {
   max-width: 865px;
   margin: auto;
   padding: 35px;
 }
 
-#information .shoping {
+.shoping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +268,7 @@ header {
           justify-content: center;
 }
 
-#information .shoping__blog {
+.shoping__blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,50 +280,43 @@ header {
   margin: 15px;
   vertical-align: top;
   font-family: Arial, Helvetica, sans-serif;
+  width: 20%;
 }
 
-#information .shoping__blog img {
-  margin-left: auto;
-  margin-right: auto;
+.shoping__blog img {
+  margin: 0 auto 0 auto;
 }
 
-#information .shoping__blog span {
-  width: 180px;
-}
-
-#section-text {
+.section-text {
   background: url(/img/window-and-door.jpg) no-repeat center 50%;
   background-size: cover;
   padding: 35px;
 }
 
-#section-text .wrapper-text {
+.wrapper-text {
   max-width: 865px;
   margin: auto;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#section-text h2 {
-  max-width: 895px;
-  margin: auto;
-  padding-top: 15px;
-  background-color: rgba(255, 255, 255, 0.8);
+.wrapper-text h2 {
+  text-align: center;
 }
 
-#section-text ul, #section-text p {
+.wrapper-text ul, .wrapper-text p {
   margin: 35px;
   font-family: Roboto, sans-serif;
 }
 
-#contacts {
+.contacts {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
 }
 
-#contacts h2 {
+.contacts h2 {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -329,7 +325,7 @@ header {
   margin: 15px;
 }
 
-#contacts .contact-inf {
+.contacts .contact-inf {
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 1;
@@ -339,19 +335,38 @@ header {
   margin-left: 15px;
 }
 
-#contacts a {
+.contacts .contact-inf a {
   text-decoration: none;
   color: #00173d;
   margin-bottom: 15px;
   font-family: Roboto, sans-serif;
+  padding-left: 15px;
 }
 
-#contacts iframe {
+.contacts iframe {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3 / 7;
+}
+
+footer {
+  background-color: #383636;
+  padding: 35px;
+}
+
+footer h3 {
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  float: right;
+  font-size: 25px;
+}
+
+footer p {
+  color: #fff;
+  font-family: Roboto, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

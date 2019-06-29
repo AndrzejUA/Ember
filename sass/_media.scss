@@ -1,5 +1,8 @@
-@media screen and (max-width: 992px) {
-    #feedback {
+@media screen and (max-width: 900px) {
+    section .offer .content-block {
+        width: 100%;
+    }
+    .feedback {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,7 +20,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    #feedback {
+    .feedback {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -26,7 +29,8 @@
             margin: 0px;
         }
     }
-    #contacts {
+    
+    .contacts {
         h2 {
             grid-row: 1;
             grid-column: 1 / -1;
