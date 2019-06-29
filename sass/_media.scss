@@ -29,8 +29,12 @@
             margin: 0px;
         }
     }
-    
-    .contacts {
+
+    .shoping .shoping__blog {
+        width: 40%;
+    }
+
+    body .contacts {
         h2 {
             grid-row: 1;
             grid-column: 1 / -1;
@@ -43,5 +47,11 @@
             grid-row: 3;
             grid-column: 1 / -1;
         }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .shoping .shoping__blog {
+        width: 90%;
     }
 }
