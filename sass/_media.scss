@@ -1,6 +1,6 @@
 @media screen and (max-width: 900px) {
     section .offer .content-block {
-        width: 100%;
+        width: 23%;
     }
     .feedback {
         display: flex;
@@ -19,7 +19,16 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+    body .offer .content-block {
+        width: 24%;
+        margin: 5px;
+        .content-text, .content-btn {
+            font-size: 10px;
+        }
+
+    }
+
     .feedback {
         display: flex;
         flex-direction: column;
@@ -53,5 +62,9 @@
 @media screen and (max-width: 420px) {
     .shoping .shoping__blog {
         width: 90%;
+    }
+
+    body .offer .content-block {
+        width: 50%;
     }
 }
