@@ -361,15 +361,18 @@ header {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #383636;
   padding: 35px;
 }
 
 footer h3 {
-  display: inline-block;
+  display: block;
   font-family: Roboto, sans-serif;
   color: #fff;
-  float: right;
+  margin-right: auto;
   font-size: 25px;
 }
 
