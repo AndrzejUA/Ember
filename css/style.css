@@ -84,11 +84,11 @@
   }
 }
 
-.information h2, .contacts h2 {
+.section1 h2, .feedback h2, .information h2, .wrapper-text h2, .contacts h2 {
   text-align: center;
   font-family: Roboto, sans-serif;
   color: #00173d;
-  margin-top: 0px;
+  text-transform: uppercase;
 }
 
 body {
@@ -157,9 +157,6 @@ header {
 
 .section1 h2 {
   margin: 0 0 10px 0;
-  text-transform: uppercase;
-  font-family: Roboto, sans-serif;
-  color: #00173d;
 }
 
 .offer {
@@ -233,11 +230,8 @@ header {
 .feedback h2 {
   display: inline-block;
   margin-top: 0;
-  color: #00173d;
   padding: 10px;
-  font-family: Roboto, sans-serif;
   text-shadow: gray 2px 3px 5px;
-  text-transform: uppercase;
   background-color: rgba(218, 218, 218, 0.5);
 }
 
@@ -260,7 +254,7 @@ header {
   cursor: pointer;
   width: 250px;
   height: 40px;
-  padding-left: 0;
+  padding-left: 0 !important;
   background-color: #1572b7;
   color: #ffffff;
   text-transform: uppercase;
